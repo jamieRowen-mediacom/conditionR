@@ -42,12 +42,14 @@ wh_observeEvent = function(
       invisible(o)
 }
 
+#' @export
 skip = function() {
   r = findRestart("skip")
   if (is.null(r)) return()
   invokeRestart(r)
 }
 
+#' @export
 wh_reactive = function(x, ..., use_default_shiny_handlers = TRUE, env = parent.frame(), quoted = FALSE, label = NULL, domain = shiny::getDefaultReactiveDomain(), ..stacktraceon = TRUE) {
   expr = exprToQuo(x, env, quoted)
   dots = rlang::list2(...)
@@ -62,6 +64,7 @@ wh_reactive = function(x, ..., use_default_shiny_handlers = TRUE, env = parent.f
   )
 }
 
+#' @export
 monkey_patch_shiny = function(functions = c("observeEvent", "reactive")) {
   if (length(functions) == 0) return(invisible(NULL))
   shiny = getNamespace("shiny")

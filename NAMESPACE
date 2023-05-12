@@ -3,4 +3,7 @@
 export(as_handler)
 export(condition_factory)
 export(example_condition)
+export(monkey_patch_shiny)
 export(register_shiny_condition_handler)
+export(skip)
+export(wh_reactive)
