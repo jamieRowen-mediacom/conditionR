@@ -13,12 +13,17 @@ could cause an issue that you want to recover from in some fashion.
 Applying changes to a database, we might want to rollback if something
 unexpected is found. If a user supplies data in a different format to
 that expected we might want to indicate that to them, rather than have
-the session crash. *Maybe you’re born with it* but I found dealing with
-different types of issues in shiny apps difficult, so wrote this package
-to facilitate easier processing of different types of issues. With
-{conditionR}, make your shiny application stand *head and shoulders*
-above the rest by adding infrastructure for condition and error handling
-to your reactives and observers.
+the session crash. Dealing with different types of issues in shiny apps
+can be difficult, this package facilitates easier processing of
+different types of issues.
+
+With {conditionR}, make your shiny application stand *head and
+shoulders* above the rest by adding infrastructure for condition and
+error handling to your reactives and observers.
+
+There will be *no more tears* from your users getting disconnected from
+your app as a result of a crash or unexpected operation if you nourish
+your applications with {conditionR}. It’s *used by professionals*.
 
 Each shiny reactive and observer function can be called with specified
 condition handlers, restart procedures as well as default handlers that

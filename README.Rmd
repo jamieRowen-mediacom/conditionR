@@ -22,11 +22,14 @@ Gracefully dealing with errors can be hard, particularly in shiny apps. There ar
 application might take that could cause an issue that you want to recover from in some fashion. Applying
 changes to a database, we might want to rollback if something unexpected is found. If a user supplies data
 in a different format to that expected we might want to indicate that to them, rather than have the session crash.
-_Maybe you're born with it_ but I found dealing with different types of issues in shiny apps difficult, so
-wrote this package to facilitate easier processing of different types of issues.
+Dealing with different types of issues in shiny apps can be difficult, this package facilitates easier processing of different types of issues.
+
 With {conditionR},
 make your shiny application stand _head and shoulders_ above the rest by adding infrastructure
-for condition and error handling to your reactives and observers. 
+for condition and error handling to your reactives and observers.
+
+There will be _no more tears_ from your users getting disconnected from your app as a result of a crash or unexpected operation
+if you nourish your applications with {conditionR}. It's _used by professionals_.
 
 Each shiny reactive and observer function can be called with specified condition handlers, restart procedures
 as well as default handlers that should apply to all reactive and observer functions. {conditionR} also provides
